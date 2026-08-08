@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diligent Property Advisors | Because You Deserve A Beautifull Home</title>
+  <title>Diligent Property Advisors | Because You Deserve A Beautiful Home</title>
   <style>
     /* CSS Variables & Design Tokens */
     :root {
@@ -43,8 +43,9 @@
     }
 
     img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       display: block;
     }
 
@@ -71,7 +72,7 @@
     }
 
     .brand-logo {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: var(--primary-navy);
       letter-spacing: -0.5px;
@@ -205,11 +206,6 @@
     .property-image {
       height: 220px;
       background-color: #CBD5E1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      font-weight: 600;
       position: relative;
     }
 
@@ -224,6 +220,7 @@
       font-size: 0.8rem;
       font-weight: 600;
       text-transform: uppercase;
+      z-index: 10;
     }
 
     .property-content {
@@ -341,7 +338,7 @@
         font-size: 1.1rem;
       }
       .nav-links {
-        display: none; /* In production, replace with a mobile hamburger menu */
+        display: none;
       }
       .property-grid {
         grid-template-columns: 1fr;
@@ -357,10 +354,10 @@
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="container nav-container">
-      <a href="#" class="brand-logo">AURA<span>HAVEN</span></a>
+      <a href="#" class="brand-logo">DILIGENT <span>PROPERTY ADVISORS</span></a>
       <ul class="nav-links">
-        <li><a href="#featured" class="nav-link">Featured</a></li>
-        <li><a href="#contact" class="nav-link">Agents</a></li>
+        <li><a href="#featured" class="nav-link">Featured Listings</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
         <li><a href="#contact" class="btn btn-nav">Book Inspection</a></li>
       </ul>
     </div>
@@ -369,115 +366,43 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-content">
-      <h1 class="hero-title">Discover Properties That Fit Your Future</h1>
-      <p class="hero-subtitle">Premium residential and commercial real estate crafted for modern living. Schedule your private viewing today.</p>
-      <a href="#contact" class="btn btn-primary">Schedule an Inspection</a>
+      <h1 class="hero-title">Because You Deserve A Beautiful Home</h1>
+      <p class="hero-subtitle">Expert real estate guidance and premium property solutions tailored to your unique lifestyle.</p>
+      <a href="#contact" class="btn btn-primary">Schedule A Consultation</a>
     </div>
   </section>
 
-  <!-- Featured Properties Grid -->
-  <section class="properties" id="featured">
+  <!-- Featured Properties Section -->
+  <section id="featured" class="properties">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Featured Listings</h2>
-        <p class="section-subtitle">Explore our handpicked selection of top-tier homes</p>
+        <h2 class="section-title">Our Handpicked Properties</h2>
+        <p class="section-subtitle">Explore top-tier modern residential investments curated by our expert advisors.</p>
       </div>
 
       <div class="property-grid">
-        <!-- Property 1 -->
-        <div class="property-card">
+        <!-- Property Card 1 -->
+        <article class="property-card">
           <div class="property-image">
             <span class="property-badge">For Sale</span>
-            Image Placeholder
+            <img src="https://unsplash.com" alt="Modern Family Villa">
           </div>
           <div class="property-content">
             <div class="property-price">$1,250,000</div>
-            <h3 class="property-title">The Glasshouse Villa</h3>
-            <p class="property-location">742 Evergreen Terrace, Metro District</p>
+            <h3 class="property-title">Modern Minimalist Villa</h3>
+            <p class="property-location">Luxury Estate, Beverly Hills</p>
             <div class="property-features">
-              <span>4 Beds</span> • 
-              <span>3.5 Baths</span> • 
-              <span>3,200 sqft</span>
+              <span>4 Beds</span> • <span>3 Baths</span> • <span>3,200 sqft</span>
             </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Property 2 -->
-        <div class="property-card">
+        <!-- Property Card 2 -->
+        <article class="property-card">
           <div class="property-image">
             <span class="property-badge">For Sale</span>
-            Image Placeholder
+            <img src="https://unsplash.com" alt="Contemporary Mansion">
           </div>
           <div class="property-content">
-            <div class="property-price">$890,000</div>
-            <h3 class="property-title">Skyline Modern Loft</h3>
-            <p class="property-location">100 Ocean Drive, Bay Area</p>
-            <div class="property-features">
-              <span>2 Beds</span> • 
-              <span>2 Baths</span> • 
-              <span>1,450 sqft</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Property 3 -->
-        <div class="property-card">
-          <div class="property-image">
-            <span class="property-badge">For Sale</span>
-            Image Placeholder
-          </div>
-          <div class="property-content">
-            <div class="property-price">$2,100,000</div>
-            <h3 class="property-title">Oakridge Executive Estate</h3>
-            <p class="property-location">12 Pine Hill Road, Suburb North</p>
-            <div class="property-features">
-              <span>5 Beds</span> • 
-              <span>4.5 Baths</span> • 
-              <span>4,800 sqft</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Lead-Capture Form -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-wrapper">
-        <div class="section-header" style="margin-bottom: 32px;">
-          <h2 class="section-title">Contact an Agent</h2>
-          <p class="section-subtitle">Have a question or want to book a private tour? Send us a message.</p>
-        </div>
-        <form>
-          <div class="form-group">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" id="name" class="form-input" placeholder="Jane Doe" required>
-          </div>
-          <div class="form-group">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" id="email" class="form-input" placeholder="jane@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" id="phone" class="form-input" placeholder="(555) 000-0000">
-          </div>
-          <div class="form-group">
-            <label for="message" class="form-label">Property or Inquiry Details</label>
-            <textarea id="message" class="form-textarea" placeholder="I am interested in scheduling an inspection for..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary form-btn">Submit Request</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Aura Haven Real Estate. All rights reserved.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+            <div class="property-price">$895,000</div>
+            <h3 class="property-title">Serene Horizon Mansion</h3>
