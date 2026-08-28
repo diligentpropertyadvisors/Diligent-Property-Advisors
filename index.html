@@ -1587,8 +1587,9 @@
 
         <div class="property-body">
           <div class="property-type">${property.type}</div>
-          <h3>${property.title}</h3>
-          <p class="property-location">${property.location}</p>
+<h3>${property.title}</h3>
+<p class="property-developer">${property.developer || ""}</p>
+<p class="property-location">${property.location}</p>
 
           <div class="property-meta">
             ${property.features.map(feature => `<span class="meta">${feature}</span>`).join("")}
