@@ -129,7 +129,7 @@
     }
 
     .nav-inner {
-      min-height: 78px;
+      min-height: 150px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -144,17 +144,23 @@
     }
 
     .brand-mark {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 11px;
-      background: var(--navy);
-      color: var(--gold);
-      font-weight: 900;
-      letter-spacing: -.05em;
-    }
-
+    width: 220px;
+    height: 70px;
+    overflow: visible;
+    display: grid;
+    place-items: center;
+    border-radius: 0;
+    background: transparent;
+    color: var(--gold);
+    font-weight: 900;
+    letter-spacing: -.05em;
+}
+    
+.brand-mark img {
+    width: 220px;
+    height: auto;
+    display: block;
+}
     .brand-name {
       font-size: .98rem;
       line-height: 1.05;
@@ -893,10 +899,7 @@
         <div class="brand-mark">
     <img src="diligent-watermark.png" alt="Diligent Group Pvt Ltd">
 </div>
-        <div class="brand-name">
-          DILIGENT
-          <span>PROPERTY ADVISORS</span>
-        </div>
+        
       </a>
 
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
